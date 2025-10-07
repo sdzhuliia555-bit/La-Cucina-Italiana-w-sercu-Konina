@@ -1,0 +1,13 @@
+# System
+Thumbs.db
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logi i tymczasowe pliki
+*.log
+*.tmp
+
+# Node (jeśli używasz w przyszłości)
+node_modules/
