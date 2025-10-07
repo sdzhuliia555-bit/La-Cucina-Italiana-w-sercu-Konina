@@ -1,296 +1,287 @@
-/* === Reset === */
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* === Base === */
 body {
-  font-family: 'Playfair Display', serif;
-  background: #f8f6f2;
-  color: #2d2d2d;
-  line-height: 1.6;
-  overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    background: #f8f6f2;
+    color: #2d2d2d;
+    line-height: 1.6;
 }
 
-/* === Container === */
+/* Container */
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* === Header === */
+/* Header */
 header {
-  background: #fff;
-  border-bottom: 2px solid #e2d9c3;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+    background: #fff;
+    border-bottom: 2px solid #e2d9c3;
+    padding: 30px 0 10px 0;
 }
 
 .logo h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.8rem;
-  color: #b48a78;
-  text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #b48a78;
+    letter-spacing: 2px;
 }
 
 .logo .palazzo {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .logo .venezia {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  color: #2d2d2d;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #2d2d2d;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #7a6a53;
-  text-align: center;
-  margin-top: 5px;
-  font-style: italic;
+.logo .tagline {
+    font-size: 1.1rem;
+    color: #7a6a53;
+    margin-top: 5px;
+    font-style: italic;
 }
 
-/* === Navigation === */
+/* Navigation */
 nav {
-  margin-top: 15px;
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* отступы между пунктами на ПК */
+    list-style: none;
 }
 
 nav a {
-  text-decoration: none;
-  color: #2d2d2d;
-  font-weight: 700;
-  font-size: 1.05rem;
-  padding: 8px 14px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-  color: #fff;
-  background: #b48a78;
+    color: #b48a78;
+    transform: scale(1.05);
 }
 
-/* === Banner === */
+/* Banner */
 .banner {
-  background: url('images/banner.jpg') center/cover no-repeat;
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  position: relative;
+    background: url('images/banner.jpg') center/cover no-repeat;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    position: relative;
 }
 
 .banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(180, 138, 120, 0.35);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(180, 138, 120, 0.25);
+    z-index: 1;
 }
 
 .banner h2 {
-  position: relative;
-  font-size: 2.3rem;
-  z-index: 2;
-  font-family: 'Great Vibes', cursive;
-  margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .banner button {
-  position: relative;
-  z-index: 2;
-  background: #b48a78;
-  color: #fff;
-  border: none;
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+    background: #b48a78;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, transform 0.3s;
 }
 
 .banner button:hover {
-  background: #7a6a53;
-  transform: scale(1.05);
+    background: #7a6a53;
+    transform: scale(1.05);
 }
 
-/* === Sections === */
+/* Sections */
 section {
-  padding: 60px 0;
+    padding: 60px 0;
 }
 
 h3 {
-  font-size: 2rem;
-  color: #b48a78;
-  margin-bottom: 30px;
-  font-family: 'Great Vibes', cursive;
-  text-align: center;
+    font-size: 2rem;
+    color: #b48a78;
+    margin-bottom: 30px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
 
-/* === About === */
+/* About */
 .about p {
-  font-size: 1.1rem;
-  color: #3d3d3d;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
+    font-size: 1.15rem;
+    color: #3d3d3d;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/* === Menu === */
+/* Menu */
 .menu-category {
-  margin-bottom: 40px;
-  padding: 0 20px;
+    margin-bottom: 40px;
 }
 
 .menu-category h4 {
-  font-size: 1.4rem;
-  color: #7a6a53;
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  border-bottom: 1px solid #e2d9c3;
-  padding-bottom: 8px;
+    font-size: 1.3rem;
+    color: #7a6a53;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid #e2d9c3;
+    padding-bottom: 5px;
 }
 
 .menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px dotted #e2d9c3;
-  font-size: 1.05rem;
-  gap: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #e2d9c3;
+    font-size: 1.08rem;
 }
 
 .menu-item strong {
-  color: #2d2d2d;
+    color: #2d2d2d;
 }
 
 .menu-item span {
-  color: #b48a78;
-  font-weight: 700;
+    color: #b48a78;
+    font-weight: 700;
 }
 
-/* === Gallery === */
+/* Gallery */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
 }
 
 .gallery-item {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(180,138,120,0.08);
-  text-align: center;
-  transition: transform 0.3s;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(180,138,120,0.08);
+    text-align: center;
+    transition: transform 0.3s;
 }
 
 .gallery-item:hover {
-  transform: scale(1.04);
+    transform: scale(1.04);
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
 }
 
 .caption {
-  padding: 10px 0;
-  color: #7a6a53;
-  font-size: 1.05rem;
+    padding: 10px 0;
+    color: #7a6a53;
+    font-size: 1.05rem;
+    font-family: 'Playfair Display', serif;
 }
 
-/* === Contact === */
+/* Contact */
 .contact p {
-  font-size: 1.08rem;
-  color: #3d3d3d;
-  margin-bottom: 10px;
-  text-align: center;
+    font-size: 1.08rem;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-/* === Footer === */
+/* Footer */
 footer {
-  background: #b48a78;
-  color: #fff;
-  text-align: center;
-  padding: 18px 0;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  margin-top: 40px;
-}
-
-/* === Responsive Design === */
-
-/* Tablet */
-@media (max-width: 900px) {
-  .logo h1 {
-    font-size: 2.4rem;
-  }
-  .banner h2 {
-    font-size: 2rem;
-  }
-  .menu-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .banner {
-    min-height: 250px;
-    padding: 40px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu-category {
-    padding: 0 10px;
-  }
-
-  .menu-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .menu-item strong {
+    background: #b48a78;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
     font-size: 1rem;
-  }
-
-  .menu-item span {
-    font-size: 0.95rem;
-  }
-
-  .gallery-item img {
-    height: 140px;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-  }
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
 }
+
+/* Responsive: Tablets */
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .gallery-item img {
+        height: 140px;
+    }
+}
+
+/* Responsive: Smartphones */
+@media (max-width: 500px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .banner {
+        min-height: 180px;
+    }
+
+    .gallery-item img {
+        height: 120px;
+    }
+}
+
