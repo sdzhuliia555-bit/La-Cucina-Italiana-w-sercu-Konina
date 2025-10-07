@@ -23,7 +23,7 @@ body {
 header {
     background: #fff;
     border-bottom: 2px solid #e2d9c3;
-    padding: 30px 0 10px 0;
+    padding: 20px 0;
 }
 
 .logo h1 {
@@ -33,22 +33,9 @@ header {
     letter-spacing: 2px;
 }
 
-.logo .palazzo {
-    font-weight: 700;
-}
-
-.logo .venezia {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    color: #2d2d2d;
-}
-
-.logo .tagline {
-    font-size: 1.1rem;
-    color: #7a6a53;
-    margin-top: 5px;
-    font-style: italic;
-}
+.logo .palazzo { font-weight: 700; }
+.logo .venezia { font-weight: 400; color: #2d2d2d; }
+.logo .tagline { font-size: 1.1rem; color: #7a6a53; margin-top: 5px; font-style: italic; }
 
 /* Navigation */
 nav {
@@ -63,8 +50,9 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 40px; /* отступы между пунктами на ПК */
+    gap: 40px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -133,10 +121,7 @@ nav a:hover {
 }
 
 /* Sections */
-section {
-    padding: 60px 0;
-}
-
+section { padding: 60px 0; }
 h3 {
     font-size: 2rem;
     color: #b48a78;
@@ -155,10 +140,7 @@ h3 {
 }
 
 /* Menu */
-.menu-category {
-    margin-bottom: 40px;
-}
-
+.menu-category { margin-bottom: 40px; }
 .menu-category h4 {
     font-size: 1.3rem;
     color: #7a6a53;
@@ -177,14 +159,8 @@ h3 {
     font-size: 1.08rem;
 }
 
-.menu-item strong {
-    color: #2d2d2d;
-}
-
-.menu-item span {
-    color: #b48a78;
-    font-weight: 700;
-}
+.menu-item strong { color: #2d2d2d; }
+.menu-item span { color: #b48a78; font-weight: 700; }
 
 /* Gallery */
 .gallery-grid {
@@ -202,17 +178,12 @@ h3 {
     transition: transform 0.3s;
 }
 
-.gallery-item:hover {
-    transform: scale(1.04);
-}
-
+.gallery-item:hover { transform: scale(1.04); }
 .gallery-item img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: auto; /* чтобы картинки не обрезались */
     display: block;
 }
-
 .caption {
     padding: 10px 0;
     color: #7a6a53;
@@ -242,46 +213,18 @@ footer {
 
 /* Responsive: Tablets */
 @media (max-width: 800px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .banner h2 {
-        font-size: 2rem;
-    }
-
-    section {
-        padding: 40px 0;
-    }
-
-    .gallery-item img {
-        height: 140px;
-    }
+    nav ul { flex-direction: column; align-items: center; gap: 15px; }
+    .banner h2 { font-size: 2rem; padding: 0 10px; }
+    section { padding: 40px 0; }
+    .gallery-item img { height: auto; }
 }
 
 /* Responsive: Smartphones */
 @media (max-width: 500px) {
-    .logo h1 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    .banner {
-        min-height: 180px;
-    }
-
-    .gallery-item img {
-        height: 120px;
-    }
+    .logo h1 { font-size: 2rem; }
+    h3 { font-size: 1.3rem; }
+    nav a { font-size: 1rem; padding: 8px 12px; }
+    .banner { min-height: 180px; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item img { height: auto; }
 }
-
