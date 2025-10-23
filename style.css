@@ -76,7 +76,8 @@ nav a:hover {
 
 /* Banner */
 .banner {
-    background: url('images/banner.jpg') center/cover no-repeat, linear-gradient(rgba(180,138,120,0.7), rgba(255,255,255,0.7));
+    background: url('banner.jpg') center/cover no-repeat, 
+                linear-gradient(rgba(180,138,120,0.7), rgba(255,255,255,0.7));
     min-height: 320px;
     display: flex;
     flex-direction: column;
@@ -293,3 +294,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
