@@ -118,6 +118,7 @@ nav a:hover {
 .about {
     background: #fff;
     padding: 60px 0 40px 0;
+    text-align: center; /* Центрируем текст */
 }
 
 .about h3 {
@@ -132,6 +133,7 @@ nav a:hover {
     font-size: 1.15rem;
     color: #3d3d3d;
     max-width: 700px;
+    margin: 0 auto; /* Центрируем блок абзаца */
 }
 
 /* Menu */
@@ -231,7 +233,7 @@ nav a:hover {
 .contact {
     background: #f3ece6;
     padding: 60px 0 40px 0;
-    text-align: center;
+    text-align: center; /* Центрируем текст */
 }
 
 .contact h3 {
@@ -240,14 +242,12 @@ nav a:hover {
     margin-bottom: 18px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    text-align: center;
 }
 
 .contact p {
     font-size: 1.08rem;
     color: #3d3d3d;
     margin-bottom: 6px;
-    text-align: center;
 }
 
 /* Footer */
@@ -297,7 +297,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
