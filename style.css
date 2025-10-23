@@ -54,14 +54,12 @@ header {
     margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
     gap: 40px;
     list-style: none;
-    display: flex;
-    gap: 30px;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -70,22 +68,22 @@ nav a {
     color: #2d2d2d;
     font-weight: 500;
     font-size: 1.05rem;
-    transition: color 0.2s;
-    padding: 6px 12px;
-    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 8px 14px;
+    border-radius: 6px;
 }
 
 nav a:hover {
-    color: #b48a78;
-    background: #f3ece6;
+    color: #fff;
+    background: #b48a78;
 }
 
 /* Banner с фото оливок */
 .banner {
     background:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)),
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15)),
         url('olives-banner.png') center/cover no-repeat;
-    min-height: 320px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,19 +96,18 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(180, 138, 120, 0.25);
+    background: rgba(0,0,0,0.15);
     z-index: 1;
 }
 
 .banner h2 {
     position: relative;
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    margin-bottom: 20px;
+    color: #fffae6;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -120,68 +117,66 @@ nav a:hover {
     background: #b48a78;
     color: #fff;
     border: none;
-    padding: 14px 36px;
-    font-size: 1.1rem;
+    padding: 16px 40px;
+    font-size: 1.2rem;
     border-radius: 30px;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 1px;
-    transition: background 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 .banner button:hover {
-    background: #a06d5c;
+    background: #9a5e4b;
+    transform: translateY(-2px);
 }
 
 /* About */
 .about {
-    background: #fff;
-    padding: 60px 0 40px 0;
+    background: #fff8f0;
+    padding: 70px 0 50px 0;
     text-align: center;
 }
 
 .about h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #b48a78;
-    margin-bottom: 18px;
-    font-family:
-    'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
-/* About */
 .about p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: #3d3d3d;
-    text-align: center;
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 /* Menu */
 .menu {
-    background: #f3ece6;
-    padding: 60px 0 40px 0;
+    background: #fff3e6;
+    padding: 70px 0 50px 0;
 }
 
 .menu h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #b48a78;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 .menu-category {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 .menu-category h4 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #a06d5c;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
@@ -190,9 +185,9 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 8px 0;
+    padding: 10px 0;
     border-bottom: 1px dotted #e2d8c3;
-    font-size: 1.08rem;
+    font-size: 1.1rem;
 }
 
 .menu-item strong {
@@ -207,71 +202,72 @@ nav a:hover {
 
 /* Gallery */
 .gallery {
-    background: #fff;
-    padding: 60px 0 40px 0;
+    background: #fff8f0;
+    padding: 70px 0 50px 0;
 }
 
 .gallery h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #b48a78;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 26px;
 }
 
 .gallery-item {
-    background: #f8f6f2;
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(44,44,44,0.07);
+    box-shadow: 0 4px 15px rgba(44,44,44,0.1);
     text-align: center;
-    transition: transform 0.18s;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gallery-item:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(44,44,44,0.15);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 170px;
+    height: 180px;
     object-fit: cover;
     display: block;
 }
 
 .caption {
-    padding: 10px 0;
+    padding: 12px 0;
     color: #a06d5c;
     font-weight: 600;
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     background: #fff;
 }
 
 /* Contact */
 .contact {
-    background: #f3ece6;
-    padding: 60px 0 40px 0;
+    background: #fff3e6;
+    padding: 70px 0 50px 0;
     text-align: center;
 }
 
 .contact h3 {
     font-size: 2rem;
     color: #b48a78;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 .contact p {
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     color: #3d3d3d;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 /* Footer */
@@ -279,7 +275,7 @@ footer {
     background: #b48a78;
     color: #fff;
     text-align: center;
-    padding: 18px 0;
+    padding: 20px 0;
     font-size: 1rem;
     letter-spacing: 1px;
     margin-top: 0;
@@ -288,19 +284,19 @@ footer {
 /* Responsive */
 @media (max-width: 900px) {
     nav ul {
-        gap: 18px;
+        gap: 20px;
     }
     .container {
-        width: 96%;
+        width: 95%;
     }
 }
 
 @media (max-width: 700px) {
     .logo h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .banner h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
@@ -308,17 +304,15 @@ footer {
 }
 
 @media (max-width: 500px) {
-    header, .about, .menu, .gallery, .contact {
-        padding-left: 0;
-        padding-right: 0;
-    }
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         align-items: flex-start;
     }
     .gallery-grid {
         grid-template-columns: 1fr;
     }
 }
+
+
 
