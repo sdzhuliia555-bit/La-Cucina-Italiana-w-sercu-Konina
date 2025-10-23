@@ -25,21 +25,23 @@ header {
     padding: 30px 0 10px 0;
 }
 
+/* Логотип с градиентом текста */
 .logo h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 2.8rem;
     letter-spacing: 2px;
-    color: #b48a78;
     margin-bottom: 0.2em;
+
+    background: linear-gradient(90deg, #b48a78, #f3d3b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo .palazzo {
-    color: #b48a78;
     font-weight: 700;
 }
 
 .logo .venezia {
-    color: #2d2d2d;
     font-weight: 400;
 }
 
@@ -118,7 +120,7 @@ nav a:hover {
 .about {
     background: #fff;
     padding: 60px 0 40px 0;
-    text-align: center; /* Центрируем текст */
+    text-align: center;
 }
 
 .about h3 {
@@ -133,7 +135,7 @@ nav a:hover {
     font-size: 1.15rem;
     color: #3d3d3d;
     max-width: 700px;
-    margin: 0 auto; /* Центрируем блок абзаца */
+    margin: 0 auto;
 }
 
 /* Menu */
@@ -233,7 +235,7 @@ nav a:hover {
 .contact {
     background: #f3ece6;
     padding: 60px 0 40px 0;
-    text-align: center; /* Центрируем текст */
+    text-align: center;
 }
 
 .contact h3 {
@@ -297,3 +299,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
