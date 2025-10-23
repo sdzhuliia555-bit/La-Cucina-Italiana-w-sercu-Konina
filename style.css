@@ -14,7 +14,6 @@ body {
 
 /* Container */
 .container {
-    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
@@ -55,6 +54,15 @@ header {
 }
 
 /* Navigation */
+nav {
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -78,10 +86,10 @@ nav a:hover {
     background: #b48a78;
 }
 
-/* Banner с фото оливок */
+/* Banner с фото оливок, роскошный стиль */
 .banner {
     background:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15)),
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)),
         url('olives-banner.png') center/cover no-repeat;
     min-height: 400px;
     display: flex;
@@ -96,41 +104,46 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.15);
+    background: rgba(180, 138, 120, 0.25);
     z-index: 1;
 }
 
 .banner h2 {
     position: relative;
     z-index: 2;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Great Vibes', cursive;
-    color: #fffae6;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
-    margin-bottom: 25px;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #f3c47f, #b48a78, #e6b08c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .banner button {
     position: relative;
     z-index: 2;
-    background: #b48a78;
+    background: linear-gradient(45deg, #b48a78, #f3c47f);
     color: #fff;
     border: none;
     padding: 16px 40px;
     font-size: 1.2rem;
-    border-radius: 30px;
+    border-radius: 40px;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
 }
 
 .banner button:hover {
-    background: #9a5e4b;
+    background: linear-gradient(45deg, #f3c47f, #b48a78);
     transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
 /* About */
@@ -313,6 +326,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
