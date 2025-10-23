@@ -231,6 +231,7 @@ nav a:hover {
 .contact {
     background: #f3ece6;
     padding: 60px 0 40px 0;
+    text-align: center;
 }
 
 .contact h3 {
@@ -294,5 +295,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
 
